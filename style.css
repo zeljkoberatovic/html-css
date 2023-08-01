@@ -1,0 +1,622 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	background: rgba(247,247,247,1.00)
+}
+
+h1 {font-size: 38px; }
+h2 {font-size: 30px; }
+h3 {font-size: 26px; }
+h4 {font-size: 24px; }
+h5 {font-size: 22px; }
+h6 {font-size: 18px; }
+
+a:link,
+a:visited {
+	transition: 0.5s all linear;
+	color: rgba(0,0,0,1.00)
+}
+a:hover {
+	background:  rgba(252,252,252,0.45);
+	transition: 0.5s all linear;
+		
+}
+.container{
+	width: 1080px;
+	margin: 0 auto
+}
+img{
+	vertical-align: bottom;
+	max-width: 100%;
+}
+
+
+/***********
+   header
+***********/
+
+#header-img{
+	background: url("images/victor-xok-Gi0OMNguFaw-unsplash.jpg")center center/cover no-repeat fixed;
+}
+
+#header-img > h1{
+	padding: 450px
+}
+
+#header-img p{
+	font-size: 50px;
+	color: rgba(252,252,252,0.75);
+	position: absolute;
+	top: 400px;
+	left: 50px;
+	border-left: 1px solid rgba(252,252,252,0.75);
+	padding: 5px;
+	width: 600px
+}
+
+#nav ul{
+	position: absolute;
+	top:50px;
+	right: 80px;
+	display: flex;
+	list-style: none;
+}
+
+#nav ul li a{
+	padding: 10px 15px;
+	border: #fff 0.5px solid;
+	margin: 5px;
+	border-radius: 40%;
+	text-decoration: none;
+	color: rgba(252,252,252,0.80);
+	font-size: 18px
+}
+
+
+
+/************
+    main
+************/
+
+
+#central h1,h2{
+	text-align: center;
+	margin: 10px
+}
+
+#central  p{
+	width: 500px;
+	padding: 5px;
+	text-align: justify;
+	margin-bottom: 20px
+}
+
+#central .img-left{
+	display: inline-block;
+}
+
+#central .img-right{
+	display: inline-block;
+	margin-left: 55px
+}
+
+#central img{
+	border: 1px solid rgba(181,176,176,1.00);
+}
+
+#central a{
+	color: rgba(115,115,115,1.00);
+	text-decoration: none;
+	border:rgba(115,115,115,1.00) 1px solid;
+	border-radius: 10px;
+	padding: 5px 10px;
+	margin-left: 200px;
+}
+
+#central a:hover{
+	background: rgba(115,115,115,1.00);
+	color: rgba(252,252,252,1.00)
+}
+
+/*************
+   section
+**********/
+
+#section{
+	background:rgba(219,205,206,1.00); 
+	border-bottom: 2px solid rgba(172,101,103,1.00);
+	padding-bottom: 8px;
+}
+
+#section > .container{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr ;
+	grid-template-rows: auto auto auto;
+	grid-gap: 10px;
+	margin: 30px auto 0;
+}
+
+#section .news-1{
+	grid-column: 1/3;
+	grid-row: 1/3;
+	width: 500px;
+	display: flex;
+	margin-top: 10px
+}
+
+#section .news-text h3, p{
+	width: 200px;
+	text-align: left;
+	padding: 8px;
+}
+
+.news-text a{
+	text-decoration: none;
+	margin:30px 40px;
+	display: inline-block;
+	padding: 10px 15px;
+	border: rgba(115,115,115,1.00) 0.5px solid;
+	border-radius: 10px;
+	color: rgba(115,115,115,1.00);
+	
+}
+
+.news-2{
+	grid-column: 3/4;
+	grid-row: 1/2;
+	position: relative
+}
+
+.news-2 a{
+	text-decoration: none;
+}
+
+.news-2 a:link,
+.news-2 a:visited{
+	color: rgba(0,0,0,1.00)
+}.news-2 a:hover{
+	color: rgba(150,47,48,1.00)
+}.news-2 a:active{
+	color: rgba(252,252,252,0.90);
+}
+
+.news-2 h3{
+	margin-left: 100px;
+	padding: 10px;
+	
+}
+.news-2 p{
+	margin-left: 20px;
+	padding: 10px;
+	width: 100%
+}
+.news-2 i{
+	font-size: 28px;
+	position: absolute;
+	top: 10px;
+	left: 50px;
+}
+
+.news-2 a:hover {
+	background:  rgba(252,252,252,0.90);
+}
+
+ .news-3{
+	grid-column: 3/4;
+	grid-row: 2/3;
+}
+
+.news-4{
+	grid-column: 1/2;
+	grid-row: 3/4;
+}
+.news-5{
+	grid-column: 2/3;
+	grid-row: 3/4;
+}
+
+.news-6{
+	grid-column: 3/4;
+	grid-row: 3/4;
+}
+
+/************* 
+    footer
+************/
+
+footer{
+	background: rgba(51,49,49,1.00);
+	margin-top: 15px
+}
+
+footer p{
+	color: #fff;
+	font-size: 12px;
+	width: 100%;
+	text-align: center;
+	padding: 15px
+}
+
+footer ul{
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	color: #FFFFFF;
+	font-size: 14px
+}
+
+footer ul li{
+	padding: 10px
+}
+
+
+/************
+   page-1
+************/
+
+#central-page1{
+	background:rgba(219,205,206,1.00); 
+	border-bottom: 2px solid rgba(172,101,103,1.00);
+	padding: 25px
+}
+
+#central-page1 h1{
+	text-align: center;
+}
+
+#central-page1 p{
+	width: 80%;
+	margin: 10px auto
+}
+
+#central-page1 .podnaslov{
+	margin-left: 140px
+}
+
+#central-page1 img{
+	display: block;
+	margin: 10px  auto
+}
+
+#central-page1 hr{
+	width: 80%;
+	margin: 2px auto
+}
+
+#central-page1 a{
+	color: rgba(0,0,0,1.00);
+	text-decoration: none;
+}
+
+#central-page1 a:hover{
+	color: rgba(150,47,48,1.00)
+}
+
+/************
+   page-2
+**************/
+
+#central-page2 .container{
+	display: flex;
+	flex-wrap: wrap;
+	background:rgba(219,205,206,1.00); 
+	border-bottom: 2px solid rgba(172,101,103,1.00);
+}
+
+#central-page2 .team{
+	flex-basis: 290px;
+	text-align: center;
+	padding: 20px;
+	margin: 15px;
+	font-weight: 700;
+}
+
+#central-page2  h2{
+	border-bottom: 1px solid rgba(62,60,60,1.00);
+	border-top: 1px solid rgba(62,60,60,1.00);
+	width: 80%;
+	margin: 25px auto;
+	padding: 5px
+}
+
+#central-page2 .team a{
+	text-decoration: none;
+	font-size: 20px
+}
+
+#central-page2 .team a:hover{
+	color: rgba(150,47,48,1.00)
+}
+
+
+/************* 
+    page-3
+*************/
+
+#central-page3{
+	background:rgba(219,205,206,1.00); 
+	border-bottom: 2px solid rgba(172,101,103,1.00);
+}
+
+#central-page3 > .container{
+	display: flex;
+	justify-content: center;
+}
+
+#central-page3 .news-text1,
+                .news-text2{
+	   flex-basis: 50%;
+	   padding: 10px
+}
+
+#central-page3 p{
+	text-align: justify;
+	width: 100%
+}
+
+#central-page3 h5{
+	font-size: 12px
+}
+
+#central-page3 .news-text1 a{
+	text-decoration: none;
+	color: rgba(91,91,91,1.00)
+}
+
+#central-page3 .news-text1 a:hover{
+	color: rgba(150,47,48,1.00);
+	background: none
+}
+
+/**************
+     Responsive
+*************/
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+	
+	.container{
+		width: 960px;
+		display: flow-root
+	}
+	main .img-left{
+		float: left;
+		width: 440px
+	}
+	main .img-right{
+		float: right;
+		width: 440px;
+	}
+	#central .img-right p{
+		width: auto
+	}
+	#central .img-left p{
+		width: auto
+	}
+	#section .container{
+		width: 960px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center
+	}
+	#section .news-1{
+		order: 1;
+		margin: 20px
+	}
+	#section .news-2{
+		order: 2;
+		margin-bottom: 20px
+	}
+	#section .news-4{
+		order: 3;
+		margin-bottom: 10px
+	}
+	#section .news-5{
+		order: 4;
+		margin-bottom: 10px
+	}
+	#section .news-6{
+		order: 5;
+		margin-bottom: 15px
+	}
+		
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	 
+	.container{
+		width: 700px
+	}
+	main .container{
+		display: flex;
+		flex-direction: column;
+		align-items: center
+	}
+	#central .img-left{
+		
+		margin: 0 0 40px 0
+	}
+	#central .img-right{
+		margin: 0 
+	}
+	
+	#section .container{
+		display: flex;
+		flex-direction: column;
+		align-items: center
+	}
+	#section .news-1{
+		margin-left: -150px;
+		
+	}
+	
+	/************
+	page-3
+	************/
+	
+	
+	#central-page3 img{
+		display: block;
+		margin: 5px auto
+		
+	}
+	#central-page3 a{
+		margin-left: 7px
+	}
+	#central-page3 h5{
+		margin-left: 7px
+	}
+	
+	/************
+	   page-2
+	************/
+	
+	#central-page2 .team{
+		width: 50%
+	}
+	
+}
+
+@media screen and (max-width: 767px){
+	
+	.container{
+		width: 90%
+	}
+	#header-img p{
+		font-size: 25px;
+		
+	}
+	#nav ul li a{
+		font-size: 15px;
+		padding: 3px;
+		text-align: center;
+		
+	}
+	
+	
+
+	#central .container{
+		display: flex;
+		flex-direction: column;
+		align-items: center
+	}
+
+	#central .img-left{
+		margin: 0 0 40px 0;
+		max-width: 100%
+	}
+	
+	#central .img-right{
+		margin: 0;
+		max-width: 100%
+	}
+
+	#central p{
+		max-width: 100%
+	}
+
+	#central a{
+		margin: 0 20px
+	}
+		
+	#section .container{
+		display: flex;
+		flex-direction: column;
+		align-items: center
+	}
+
+	#section .news-1{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-basis: auto
+	}
+	
+	#section .news-1 p{
+		width: auto
+	}
+
+	#section .news-1{
+		max-width: 100%;
+		
+	}
+	
+	/***********
+	   page-3
+	************/
+
+	#central-page3 > .container{
+		flex-direction: column
+	}
+	
+	/**************
+	    page-2
+	*************/
+	
+	#central-page2 .team{
+		display: block;
+		margin: 5px auto
+	}
+	
+	
+} /***** end ********/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
